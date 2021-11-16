@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
     } else {
       userProvider.fetchUser(_controller.text).then((value) {
         if (value) {
-          // Navigator.pushNamed(context, FollowingScreen.routeName, arguments: _controller.text);
+          Navigator.pushNamed(context, FollowingScreen.routeName, arguments: _controller.text);
         }
       });
       setState(() {
